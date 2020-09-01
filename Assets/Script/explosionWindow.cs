@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//make something explode after hitting something
 public class explosionWindow : MonoBehaviour {
 
     public float cubeSize = 0.2f;
@@ -16,18 +17,10 @@ public class explosionWindow : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-
-        
         //calculate pivot distance
         cubesPivotDistance = cubeSize * cubesInRow / 2;
         //use this value to create pivot vector)
         cubesPivot = new Vector3(cubesPivotDistance, cubesPivotDistance, cubesPivotDistance);
-
-    }
-
-    // Update is called once per frame
-    void Update() {
-
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -80,7 +73,7 @@ public class explosionWindow : MonoBehaviour {
         var pieceRender = piece.GetComponent<Renderer>();
 
         //Color
-        pieceRender.material.SetColor("_Color", Color.blue);
+        pieceRender.material.SetColor("_Color", Color.yellow);
         //Shader
         //pieceRender.material.shader = Shader.Find("Diffuse"); 
 
