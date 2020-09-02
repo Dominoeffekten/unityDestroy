@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*
+
 //make a grenade explode after 2 sec.
 public class grenadeExplosion : MonoBehaviour {
     //timer for explosion
@@ -9,7 +9,7 @@ public class grenadeExplosion : MonoBehaviour {
     float countdown;
     //radius for the elements flying
     float radius = 3;
-    float force = 500;
+    float force = 10;
     //default false
     bool hasExploded;
 
@@ -94,4 +94,4 @@ public class grenadeExplosion : MonoBehaviour {
    
 }
 
-*/
+

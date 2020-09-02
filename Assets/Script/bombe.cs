@@ -16,7 +16,7 @@ public class bombe : MonoBehaviour {
 
     //radius for the elements flying
     public float radius = 3;
-    public float force = 500;
+    public float force = 10;
 
     // Use this for initialization
     void Start() {

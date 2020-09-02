@@ -8,7 +8,8 @@ public class BrokenItem : MonoBehaviour
     public GameObject replacement;
 
     void OnCollisionEnter(){
-        //an extising object that you wan to make a copy of
+
+        //an extising object that you want to make a copy of
         GameObject.Instantiate(replacement, transform.position, transform.rotation);
         Destroy(gameObject);
     }
